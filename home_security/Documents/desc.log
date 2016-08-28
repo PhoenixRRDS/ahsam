@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.7)  26 AUG 2016 17:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.7)  29 AUG 2016 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -287,15 +287,19 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
- [2
+Overfull \hbox (8.60695pt too wide) in paragraph at lines 102--130
+[][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
+[2
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 141.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
  5532 strings out of 494985
@@ -311,7 +315,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on desc.pdf (2 pages, 84130 bytes).
+Output written on desc.pdf (2 pages, 84379 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
