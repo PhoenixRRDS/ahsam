@@ -20,6 +20,9 @@
             anchorcolor = blue]{hyperref}
 \setlength{\textwidth}{6.5in} % Text width of the document
 \setlength{\textheight}{720pt}
+\usepackage{makecell}
+\usepackage{pbox}
+
 
 \begin{document}
 
@@ -99,32 +102,34 @@ The system will enable the user to remotely access the features, live footage an
 \section{Budget For Equipment}
 \begin{table}[ht]
 \caption{Budget for Equipment}
-\begin{tabular}{c c c c c}
+\begin{tabular}{|c |c |c |c |c|}
 \hline \hline
 Sl No & Name of the equipment & Quantity & Estimated cost(INR) & Justification\\
 \hline
 
-1 & Arduino Mega 2560 & 1 & 1500 & Controller\\
-2 & SainSmart LCD Module For Arduino 20 X 4 & 1 & 660 & -----\\
-3 & Real Time Clock DS1307 I2C AT24C32 Module & 1 & 250 & ----------\\
-4 & Magnetic Door Window Contact Reed Switch & 1 & 588 & ------ \\
-5 & Breadboard & 1 & ------ & --------\\
-6 & Breadboard jumper wires & --- & ---- & -----\\
-7 & Red LED & --- & --- & Danger\\
-8 & Green LED & --- & --- & Safe\\
-9 & 220 ohms resistor & --- & ---- & -----\\
-10 & Servo & --- & ---- & -----\\
-11 & Vivitar Recording camera & --- & ---- & -----\\
-12 & D-Link IP camera & --- & ---- & -----\\
-%10x 40-Pin Male Header 0.1" (2.54mm)
-%3 Colour RGB SMD LED Module 5050 full color
-%Adjust IR Pyroelectric Infrared IR PIR Motion Sensor
-%Active Buzzer Alarm Module Sensor Beep
-%5V Four 4 Channel Relay Module With opt coupler
-%4 x 4 Matrix Array 12 Key Membrane Switch Keypad
-%4.7k Potential meter
-%Form board
-
+1 & Arduino Mega 2560 & 1 & 1500 & Controller\\ \hline
+2 & \makecell{SainSmart LCD Module \\ For Arduino 20 X 4} & 1 & 660 & -----\\ \hline
+3 & \makecell{Real Time Clock \\ DS1307 I2C AT24C32 Module} & 1 & 250 & ----------\\ \hline
+4 & \makecell{Magnetic Door Window \\ Contact Reed Switch} & 1 & 588 & ------ \\ \hline
+5 & Breadboard & 1 & 800 & --------\\ \hline
+6 & Breadboard jumper wires & 1 & 310 & -----\\ \hline
+7 & Red LED & --- & --- & Danger\\ \hline
+8 & Green LED & --- & --- & Safe\\ \hline
+9 & 220 ohms resistor & --- & --- & -----\\ \hline
+10 & Servo & 1 & 600 & -----\\ \hline
+11 & Vivitar Recording camera & 1 & 1800 & -----\\ \hline
+12 & D-Link IP camera & 1 & 1200 & -----\\ \hline
+13 & 10x 40-Pin Male Header 0.1" (2.54mm) & 1 & 204 & --- \\ \hline
+14 & \makecell{3 Colour RGB SMD \\LED Module 5050 full color} & 3 & 240 & ---\\ \hline
+15 & \makecell{Adjust IR Pyroelectric Infrared \\IR PIR Motion Sensor} & 1 & 480 & ---\\ \hline
+16 & \makecell{Active Buzzer \\ Alarm Module Sensor Beep} & 1 & 360 & ---\\ \hline
+17 & \makecell{5V Four 4 Channel Relay Module \\With opt coupler} & 1 & 360 & ---\\ \hline
+18 & \makecell{4 x 4 Matrix Array \\12 Key Membrane Switch Keypad} & 1 & 210 & ---\\ \hline
+19 & 4.7k Potential meter & 1 & --- & ---\\ \hline
+20 & Form board & 1 & 360 & ---\\ 
+\hline
+\textbf{Total} &   &   & 123456 & \\
+\hline
 
 \end{tabular}
 \end{table}
