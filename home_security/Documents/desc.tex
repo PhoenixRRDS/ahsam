@@ -58,10 +58,10 @@
 			
 			\begin{table}[ht]
 			\begin{tabular}{l c r}
-			Debayan De & \(+91\) 8420 650 826 &  rudra.nil.basu.1996@gmail.com\\
-			Rohit Das & \(+91\) 8961 452 125 &  rohit.das950@gmail.com\\
+			Debayan De & \(+91\) 8420 693 568 & debayan130@gmail.com\\
+			Rohit Das & \(+91\) 8961 452 125  & rohit.das950@gmail.com\\
 			Rudra Nil Basu & \(+91\) 8420 650 826 &  rudra.nil.basu.1996@gmail.com\\
-			Sumitra Chowdhury & \(+91\) 8017 022 456 &  chowdhury9995@gmail.com\\
+			Sumitra Chowdhury & \(+91\) 8017 022 456  & chowdhury9995@gmail.com\\
 			
 			\end{tabular}
 			\end{table}						
@@ -85,15 +85,16 @@ The system will enable the user to remotely access the features, live footage an
 \section{Objectives}
 \hspace{5mm} \\
 ~\textbullet~ To detect unnatural movements of intruders and set off an alarm.\\
-~\textbullet~ Activating/Deactivating the security system via a mobile phone\\
+~\textbullet~ Activating/Deactivating the security system via an android device.\\
+~\textbullet~ Send live footages of intrusion and alert the home-owner/s via the android device\\
 ~\textbullet~ Control of the lights, doors and windows of the house via smartphone.\\
-~\textbullet~ Send live footages of intrusion and alert the home-owner/s via mobile phone\\
 ~\textbullet~ To alert cops, firemen, etc. in case of an emergency.\\
 ~\textbullet~ To maintain status quo of members trapped inside the home during the intrusion, if any.
 
 \section{Methodology}
 \hspace{5mm} \\
-~\textbullet~ Creating a detection system using \textbf{\textit{Matlab}}\\
+%~\textbullet~ Creating a detection system using \textbf{\textit{Matlab}}\\
+~\textbullet~ Creating a detection system using motion sensors\\
 ~\textbullet~ Installing live-feed cameras for live footage of intrusion.\\
 ~\textbullet~ Installing proximity sensors and motion trackers to track movement of intruders.\\
 ~\textbullet~ Create a connection between an android device and the arduino board to control the various equipments of the house.
@@ -107,28 +108,30 @@ The system will enable the user to remotely access the features, live footage an
 Sl No & Name of the equipment & Quantity & Estimated cost(INR) & Justification\\
 \hline
 
-1 & Arduino Mega 2560 & 1 & 1500 & Controller\\ \hline
+1 & Arduino Mega 2560 & 1 & 1800 & Controller\\ \hline
 2 & \makecell{SainSmart LCD Module \\ For Arduino 20 X 4} & 1 & 660 & Display\\ \hline
 3 & \makecell{Real Time Clock \\ DS1307 I2C AT24C32 Module} & 1 & 250 & ----------\\ \hline
-4 & \makecell{Magnetic Door Window \\ Contact Reed Switch} & 1 & 588 & \makecell{To detect opening \\of door/window} \\ \hline
+4 & \makecell{Magnetic Door Window \\ Contact Reed Switch} & 4 & 588*4=2352 & \makecell{To detect opening \\of door/window} \\ \hline
 5 & Breadboard & 1 & 800 & \makecell{Building the \\circuit}\\ \hline
 6 & Breadboard jumper wires & 1 & 310 & \makecell{Building the \\circuit}\\ \hline
-7 & Red LED & 2 & 200*2=400 & \makecell{Danger\\signal}\\ \hline
-8 & Green LED & 2 & 200*2=400 & \makecell{Safe\\signal}\\ \hline
-9 & 220 ohms resistor & --- & --- & -----\\ \hline
-10 & Servo & 4 & 600*4=2400 & \makecell{Moving Doors and \\Window of Room}\\ \hline
-11 & Vivitar Recording camera & 1 & 4500 & Record the events\\ \hline
-12 & D-Link IP camera & 2 & 3000*2=6000 & \makecell{Real time \\broadcast of rooms}\\ \hline
-13 & 10x 40-Pin Male Header 0.1" (2.54mm) & 1 & 240 & --- \\ \hline
+7 & Red LED & 3 & 200*3=600 & \makecell{Danger\\signal}\\ \hline
+8 & Green LED & 3 & 200*3=600 & \makecell{Safe\\signal}\\ \hline
+9 & 220 ohms resistor & 10 & 10*10=100 & \makecell{Circuit \\Resistance}\\ \hline
+10 & Servo Motor & 4 & 600*4=2400 & \makecell{Moving Doors and \\Window of Room}\\ \hline
+11 & Vivitar Recording camera & 2 & 5000*2=10000 & Record the events\\ \hline
+12 & D-Link IP camera & 2 & 5000*2=10000 & \makecell{Real time \\broadcast of rooms}\\ \hline
+13 & 10x 40-Pin Male Header 0.1" (2.54mm) & 10 & 1027 & Circuit Building \\ \hline
 14 & \makecell{3 Colour RGB SMD \\LED Module 5050 full color} & 3 & 285*3=860 & \makecell{Display colors \\based on situation}\\ \hline
 15 & \makecell{Adjust IR Pyroelectric Infrared \\IR PIR Motion Sensor} & 2 & 1600*2=3200 & \makecell{Motion Detection \\in the room}\\ \hline
-16 & \makecell{Active Buzzer \\ Alarm Module Sensor Beep} & 2 & 1500*2=3000 & To raise alarm\\ \hline
-17 & \makecell{5V Four 4 Channel Relay Module \\With opt coupler} & 1 & 360 & ---\\ \hline
+16 & \makecell{Active Buzzer \\ Alarm Module Sensor Beep} & 1 & 1500 & To raise alarm\\ \hline
+17 & \makecell{5V Four 4 Channel Relay Module \\With opt coupler} & 4 & 1080 & ---\\ \hline
 %18 & \makecell{4 x 4 Matrix Array \\12 Key Membrane Switch Keypad} & 1 & 210 & ---\\ \hline
-18 & 4.7k Potential meter & 1 & 1500 & Circuit Building---\\ \hline
+18 & 4.7k Potential meter & 1 & 1500 & Circuit Building\\ \hline
+19 & 4.7k Multimeter & 1 & 1200 & Circuit Building\\ \hline
+20 & ESP8266 wifi module & 1 & 250 & \makecell{Connect phone}\\ \hline
 %19 & Form board & 1 & 360 & ---\\ 
-\hline
-\textbf{Total} &   &   & 123456 & \\
+%\hline
+& \textbf{Total}   &   & 40239 & \\
 \hline
 
 \end{tabular}
@@ -139,20 +142,19 @@ Sl No & Name of the equipment & Quantity & Estimated cost(INR) & Justification\\
 \begin{table}[ht]
 \caption{Plan of Work}
 \centering
-\begin{tabular}{c c}
+\begin{tabular}{|c | c|}
 \hline \hline
 Work & Time \\
 \hline
-PH1 & First one month\\
-PH2 & 2 months\\
-PH3 & 2 months\\
-PH4 & 1 month\\
+Survey and planning & First one week\\ \hline
+Implementation & 6 weeks\\ \hline
+Analysis & 1 week\\ \hline
 
 \end{tabular}
 \end{table}
 
-\section{Place and Date} Kolkata
-
+\section{Place and Date} Kolkata\\
+\today
 \section{Signature}
 
 \end{resume}
